@@ -1,15 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-        <hi> Hugo </hi>
-        <p>this is a test 1 from fixBug</p>\
-        <p>thiss is chinh i come profn</p>
-    
-</body>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>helllo</title>
+
+    <!-- update the version number as needed -->
+    <script src="/__/firebase/7.5.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script src="/__/firebase/7.5.0/firebase-auth.js"></script>
+    <script src="/__/firebase/7.5.0/firebase-database.js"></script>
+    <script src="/__/firebase/7.5.0/firebase-messaging.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+    <script  src="/__/firebase/7.5.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script src="/__/firebase/init.js"></script>
+
+   
+  </head>
+  <body>
+     Name 
+     <input type="text" name="" id="name">
+     <br>
+     Job Title 
+     <input type="text" name="" id="job">
+     <br>
+     Age
+     <input type="text" name="" id="age">
+     <br>
+     <input type="button" value="Insert"  onclick ="InsertPerson()">
+     <table border="1">
+       <caption align="bottom">LIST Of EMPLOYERS</caption>
+       <tr>
+         <th>Name</th>
+         <th>Job Title</th>
+       </tr>
+       <tr id="listPersons">
+          
+          
+       </tr>
+     </table> 
+     
+     <script>
+       // chỉ đến gốc database
+       const dbRef = firebase.database().ref();
+       dbRef.child('persons').on('value',snap=>{
+         fillData(snap);
+       });
+       function fillData(snap)
+       { 
+         $('#listPersons').empty();
+         snap.forEach(snapChild => {
+            let name = snapChild.child('name').val();
+            let job = snapChild.child('job').val();
+            let personKey = snapChild.key;
+         $('#listPersons').append(`<td>${name} </td>`);
+         $('#listPersons').append(`<td>${job} </td>`);
+         
+         
+         
+       });
+       }
+      
+       
+       function InsertPerson()
+       {
+        var nameValue = $('#name').val();
+        var jobValue = $('#job').val();
+        var ageValue = $('#age').val();
+        // tham chieu den node allPerson
+        var personsRef = dbRef.child('persons');
+        // tao mot node con trong node allPerson
+        var newPerson = personsRef.push();
+        newPerson.set({
+          name : nameValue,
+          job : jobValue,
+          age : ageValue
+          
+        })
+
+       }
+      </script>
+  </body>
 </html>
+

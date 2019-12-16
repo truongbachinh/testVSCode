@@ -1,0 +1,74 @@
+[debug] [2019-12-10T01:28:56.673Z] ----------------------------------------------------------------------
+[debug] [2019-12-10T01:28:56.675Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-12-10T01:28:56.675Z] CLI Version:   7.9.0
+[debug] [2019-12-10T01:28:56.675Z] Platform:      win32
+[debug] [2019-12-10T01:28:56.675Z] Node Version:  v12.13.1
+[debug] [2019-12-10T01:28:56.676Z] Time:          Tue Dec 10 2019 08:28:56 GMT+0700 (Indochina Time)
+[debug] [2019-12-10T01:28:56.676Z] ----------------------------------------------------------------------
+[debug] [2019-12-10T01:28:56.676Z] 
+[debug] [2019-12-10T01:28:56.686Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-12-10T01:28:56.687Z] > authorizing via signed-in user
+[debug] [2019-12-10T01:28:56.687Z] [iam] checking project organic-berm-257712 for permissions ["firebase.projects.get"]
+[debug] [2019-12-10T01:28:56.689Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/organic-berm-257712:testIamPermissions  
+
+[debug] [2019-12-10T01:28:57.930Z] <<< HTTP RESPONSE 200
+[debug] [2019-12-10T01:28:57.935Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/organic-berm-257712  
+ 
+[debug] [2019-12-10T01:28:58.646Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\DELL'...
+[info] 
+[debug] [2019-12-10T01:28:58.656Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/organic-berm-257712/webApps/-/config  
+ 
+[warn] !  Your requested "node" version "8" doesn't match your global version "12"
+[debug] [2019-12-10T01:28:59.903Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[info] +  functions: Emulator started at http://localhost:5001
+[info] i  functions: Watching "C:\Users\DELL\functions" for Cloud Functions...
+[debug] [2019-12-10T01:29:00.192Z] [worker-~diagnostic~-9a999acc-5f3a-4a7a-bbbb-0ab434f60fe5]: Assigning socketPath: \\?\pipe\C:\Users\DELL\functions\11560
+[debug] [2019-12-10T01:29:00.192Z] [worker-~diagnostic~-9a999acc-5f3a-4a7a-bbbb-0ab434f60fe5]: BUSY
+[debug] [2019-12-10T01:29:00.612Z] [runtime-status] [11560] Functions runtime initialized. {"cwd":"C:\\Users\\DELL\\functions","node_version":"12.13.1"}
+[debug] [2019-12-10T01:29:00.612Z] [runtime-status] [11560] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-10T01:29:00.616Z] [runtime-status] [11560] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.8.0","resolution":"C:\\Users\\DELL\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-12-10T01:29:00.619Z] [runtime-status] [11560] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\DELL\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-12-10T01:29:00.620Z] [runtime-status] [11560] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\DELL\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-12-10T01:29:00.697Z] [worker-~diagnostic~-9a999acc-5f3a-4a7a-bbbb-0ab434f60fe5]: exited
+[debug] [2019-12-10T01:29:00.698Z] [worker-~diagnostic~-9a999acc-5f3a-4a7a-bbbb-0ab434f60fe5]: FINISHED
+[debug] [2019-12-10T01:36:20.585Z] ----------------------------------------------------------------------
+[debug] [2019-12-10T01:36:20.587Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-12-10T01:36:20.587Z] CLI Version:   7.9.0
+[debug] [2019-12-10T01:36:20.587Z] Platform:      win32
+[debug] [2019-12-10T01:36:20.587Z] Node Version:  v12.13.1
+[debug] [2019-12-10T01:36:20.588Z] Time:          Tue Dec 10 2019 08:36:20 GMT+0700 (Indochina Time)
+[debug] [2019-12-10T01:36:20.588Z] ----------------------------------------------------------------------
+[debug] [2019-12-10T01:36:20.588Z] 
+[debug] [2019-12-10T01:36:20.598Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-12-10T01:36:20.599Z] > authorizing via signed-in user
+[debug] [2019-12-10T01:36:20.599Z] [iam] checking project organic-berm-257712 for permissions ["firebase.projects.get"]
+[debug] [2019-12-10T01:36:20.601Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/organic-berm-257712:testIamPermissions  
+
+[debug] [2019-12-10T01:36:21.714Z] <<< HTTP RESPONSE 200
+[debug] [2019-12-10T01:36:21.719Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/organic-berm-257712  
+ 
+[debug] [2019-12-10T01:36:22.438Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\DELL'...
+[info] 
+[debug] [2019-12-10T01:36:22.449Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/organic-berm-257712/webApps/-/config  
+ 
+[warn] !  Your requested "node" version "8" doesn't match your global version "12"
+[debug] [2019-12-10T01:36:23.738Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[info] +  functions: Emulator started at http://localhost:5001
+[info] i  functions: Watching "C:\Users\DELL\functions" for Cloud Functions...
+[debug] [2019-12-10T01:36:24.020Z] [worker-~diagnostic~-8aeb31b7-e313-4d1b-977c-46e96e5e28c1]: Assigning socketPath: \\?\pipe\C:\Users\DELL\functions\4380
+[debug] [2019-12-10T01:36:24.021Z] [worker-~diagnostic~-8aeb31b7-e313-4d1b-977c-46e96e5e28c1]: BUSY
+[debug] [2019-12-10T01:36:24.453Z] [runtime-status] [4380] Functions runtime initialized. {"cwd":"C:\\Users\\DELL\\functions","node_version":"12.13.1"}
+[debug] [2019-12-10T01:36:24.454Z] [runtime-status] [4380] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-10T01:36:24.458Z] [runtime-status] [4380] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.8.0","resolution":"C:\\Users\\DELL\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-12-10T01:36:24.460Z] [runtime-status] [4380] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\DELL\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-12-10T01:36:24.462Z] [runtime-status] [4380] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\DELL\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-12-10T01:36:24.539Z] [worker-~diagnostic~-8aeb31b7-e313-4d1b-977c-46e96e5e28c1]: exited
+[debug] [2019-12-10T01:36:24.539Z] [worker-~diagnostic~-8aeb31b7-e313-4d1b-977c-46e96e5e28c1]: FINISHED
